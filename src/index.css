@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1c1917;
+  }
+  
+  .font-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* =========================================================================
+   RESTAURANT & FOOD BACKGROUND PATTERNS (Warm White / Ivory Base)
+   Psychologically proven appetizing colors: Saffron, Terracotta, Fresh Herbs
+   ========================================================================= */
+
+/* Pattern 1: Artisanal Culinary Motif (Fork & knife, chef cloche, fresh herbs, aromatic spices in warm terracotta) */
+.pattern-culinary-motif {
+  background-color: #faf7f2;
+  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c2410c' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round' opacity='0.08'%3E%3Cpath d='M14 10v6a3 3 0 0 0 3 3v6m-3-15h6m-3 0v3m-3 0v2m6-2v2'/%3E%3Cpath d='M23 10c0 4-1 6-2 8v7m0-15h2'/%3E%3Cpath d='M47 22a7 7 0 0 1 14 0zM54 15v-2m-8 9h16'/%3E%3Cpath d='M12 60c4-7 11-7 13-11-5 2-9 5-13 11z'/%3E%3Cpath d='M25 49c-4 7-11 7-13 11'/%3E%3Cpath d='M50 48h7l1 5c0 3-2 4-4.5 4s-4.5-1-4.5-4l1-5zm3.5 9v5m-3.5 0h7'/%3E%3Ccircle cx='36' cy='36' r='1.5' fill='%23ea580c' stroke='none' opacity='0.16'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 72px 72px;
+}
+
+/* Pattern 2: French Bistro Woven Linen Tablecloth (Warm biscuit & terracotta fine grid) */
+.pattern-bistro-check {
+  background-color: #fbf9f5;
+  background-image: 
+    linear-gradient(to right, rgba(194, 65, 12, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(194, 65, 12, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Pattern 3: Fresh Botanical Herb & Basil (Organic sage & lemongrass herbal sprigs) */
+.pattern-botanical-herb {
+  background-color: #f8faf6;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%2315803d' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round' opacity='0.08'%3E%3Cpath d='M12 52c10-3 15-15 17-24-8 2-20 7-17 24z'/%3E%3Cpath d='M12 52c5-8 10-13 17-24'/%3E%3Cpath d='M38 18c6-2 10-8 12-13-5 1-11 3-12 13z'/%3E%3Ccircle cx='44' cy='44' r='1.5' fill='%23b45309' stroke='none' opacity='0.14'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 64px 64px;
+}
+
+/* Pattern 4: Pure Luminous Porcelain (Crisp white with delicate warm spice micro-dots) */
+.pattern-porcelain-clean {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(194, 65, 12, 0.04) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Warm terracotta & saffron appetite gradients for buttons and badges */
+.terracotta-gradient-bg {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 45%, #b45309 100%);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+}
+
+.emerald-gradient-bg {
+  background: linear-gradient(135deg, #10b981 0%, #059669 60%, #047857 100%);
+}
+
+.velvet-gradient-bg {
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 60%, #9f1239 100%);
+}
+
+.culinary-warm-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fffdfa 100%);
+  box-shadow: 0 4px 20px -2px rgba(180, 83, 9, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.culinary-glow {
+  box-shadow: 0 8px 24px -4px rgba(234, 88, 12, 0.35);
+}
+
+.cart-float-bar {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 -8px 30px -4px rgba(30, 20, 10, 0.08);
+}
+
+/* Light Architectural Blueprint for table layout */
+.floor-blueprint-light {
+  background-color: #fdfbf7;
+  background-image: 
+    linear-gradient(to right, rgba(180, 83, 9, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 83, 9, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Hide scrollbar for clean mobile horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Amok & Basil — Restaurant Reservation & Ordering Mobile System",
+  "description": "Full-stack mobile reservation & ordering application with interactive diagrams.net architecture, process flows, ERD, and restaurant management portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
